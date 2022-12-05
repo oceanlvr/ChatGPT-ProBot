@@ -1,6 +1,6 @@
 const { createNodeMiddleware, createProbot } = require("probot");
 
-const app = require("../../../index");
+const app = require("../../../dist/index");
 
 module.exports = createNodeMiddleware(app, {
   probot: createProbot(),
