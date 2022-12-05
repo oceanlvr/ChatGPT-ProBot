@@ -18,7 +18,7 @@ module.exports = (app) => {
     await context.octokit.issues.createComment(issueComment)
   })
 
-  app.on(['issues.created'], async (context) => {
+  app.on(['issues.created', 'issues.edited'], async (context) => {
     if (context.isBot)
       return
     const { issue } = context.payload
@@ -34,7 +34,7 @@ module.exports = (app) => {
       })
       await context.octokit.issues.createComment(issueComment)
     }
-    return 
+    return
   })
   app.on(['issue_comment.created'], async (context) => {
     if (context.isBot)
@@ -52,6 +52,6 @@ module.exports = (app) => {
       })
       await context.octokit.issues.createComment(issueComment)
     }
-    return 
+    return
   })
 };
