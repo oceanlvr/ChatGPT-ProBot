@@ -4,15 +4,6 @@ const commands = require('probot-commands-pro')
 // import search from './src/client.js'
 
 module.exports = (app) => {
-  // commands(app, 'chatgpt', async (context, command) => {
-  //   const prompt = command.arguments
-  //   const response = await search(prompt)
-  //   const issueComment = context.issue({
-  //     body: response,
-  //   })
-  //   await context.octokit.issues.createComment(issueComment)
-  // })
-
   commands(app, 'ping', async (context) => {
     const issueComment = context.issue({
       body: 'pong',
