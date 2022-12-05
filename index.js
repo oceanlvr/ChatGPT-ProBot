@@ -1,5 +1,7 @@
 const search = require('./src/client.js')
 const commands = require('probot-commands-pro')
+// import commands from 'probot-commands-pro'
+// import search from './src/client.js'
 
 module.exports = (app) => {
   // commands(app, 'chatgpt', async (context, command) => {
@@ -34,7 +36,6 @@ module.exports = (app) => {
       })
       await context.octokit.issues.createComment(issueComment)
     }
-    return
   })
   app.on(['issue_comment.created'], async (context) => {
     if (context.isBot)
@@ -52,6 +53,5 @@ module.exports = (app) => {
       })
       await context.octokit.issues.createComment(issueComment)
     }
-    return
   })
 };

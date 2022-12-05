@@ -1,7 +1,7 @@
 {
   "signal": "SIGINT",
-  "watch": ["lib", ".env"],
+  "watch": ["src", "index.js"],
   "delay": "2000",
   "verbose": false,
-  "exec": ["npm run start"]
+  "exec": ["npm run build && npm run start"]
 }

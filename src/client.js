@@ -1,16 +1,11 @@
-const chatgpt = require('@oceanlvr/chatgpt')
+const { ChatGPTAPI } = require('@oceanlvr/chatgpt')
+// import { ChatGPTAPI } from 'chatgpt'
 
-const client = new chatgpt.ChatGPTAPI({ headless: true, markdown: true })
+const client = new ChatGPTAPI({ sessionToken: process.env.SESSION_TOKEN })
 
-module.exports = async function search(prompt) {
-  const isSignedIn = await client.getIsSignedIn()
-  if (!isSignedIn)
-    await client.init()
-
-  const searchPrompt = prompt
-  const response = await client.sendMessage(searchPrompt)
-  // const reponse = ''
-  return response
+module.exports = async function search(searchPrompt) {
+  await client.ensureAuth()
+  return await client.sendMessage(searchPrompt)
 }
 
 

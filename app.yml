@@ -15,14 +15,14 @@
 default_events:
   # - check_run
   # - check_suite
-  # - commit_comment
+  - commit_comment
   # - create
   # - delete
   # - deployment
   # - deployment_status
   # - fork
   # - gollum
-  # - issue_comment
+  - issue_comment
   - issues
 # - label
 # - milestone
@@ -36,8 +36,8 @@ default_events:
 # - project_column
 # - public
 # - pull_request
-# - pull_request_review
-# - pull_request_review_comment
+- pull_request_review
+- pull_request_review_comment
 # - push
 # - release
 # - repository
@@ -124,7 +124,7 @@ default_permissions:
   # https://developer.github.com/v3/apps/permissions/
   # organization_administration: read
 # The name of the GitHub App. Defaults to the name specified in package.json
-# name: My Probot App
+name: ChatGPTBot
 
 # The homepage of your GitHub App.
 # url: https://example.com/
@@ -134,4 +134,4 @@ default_permissions:
 
 # Set to true when your GitHub App is available to the public or false when it is only accessible to the owner of the app.
 # Default: true
-# public: false
+public: true
