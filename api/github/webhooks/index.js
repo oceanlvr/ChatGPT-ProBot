@@ -6,6 +6,7 @@ module.exports = createNodeMiddleware(app, {
       appId: process.env.APP_ID,
       privateKey: process.env.PRIVATE_KEY,
       secret: process.env.WEBHOOK_SECRET,
+      githubToken: process.env.GITHUB_TOKEN
     }
   }),
   webhooksPath: "/api/github/webhooks",
