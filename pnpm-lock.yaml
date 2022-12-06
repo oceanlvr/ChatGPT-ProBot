@@ -5,7 +5,6 @@ specifiers:
   '@oceanlvr/chatgpt': ^0.5.0
   '@rollup/plugin-commonjs': ^23.0.3
   '@rollup/plugin-node-resolve': ^15.0.1
-  dotenv: ^16.0.3
   eslint: ^8.29.0
   jest: ^29.0.0
   nock: ^13.0.5
@@ -17,7 +16,6 @@ specifiers:
 
 dependencies:
   '@oceanlvr/chatgpt': 0.5.0
-  dotenv: 16.0.3
   probot: 12.2.8
   probot-commands-pro: 1.0.1
 
@@ -2354,11 +2352,6 @@ packages:
       domelementtype: 2.3.0
       domhandler: 5.0.3
     dev: true
-
-  /dotenv/16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
-    engines: {node: '>=12'}
-    dev: false
 
   /dotenv/8.6.0:
     resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}

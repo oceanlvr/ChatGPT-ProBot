@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@oceanlvr/chatgpt": "^0.5.0",
-    "dotenv": "^16.0.3",
     "probot": "^12.2.4",
     "probot-commands-pro": "^1.0.1"
   },
