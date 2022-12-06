@@ -22,6 +22,9 @@ Powered by [Probot](https://github.com/probot/probot) & [chatgpt-api](https://gi
 *step4: update webhook URL to your vercel app domain.*
 ![webhooks](./assets/webhooks.jpg)
 
+> **Note**
+> This package will switch to using the official API once it's released.
+
 ## Dev
 
 ```sh
