@@ -1,21 +1,19 @@
 const search = require('./src/client.js')
 const commands = require('probot-commands-pro')
-// import commands from 'probot-commands-pro'
-// import search from './src/client.js'
 
 module.exports = (app) => {
   commands(app, 'ping', async (context) => {
     const issueComment = context.issue({
       body: 'pong',
     })
-    await context.octokit.issues.createComment(issueComment)
+    return await context.octokit.issues.createComment(issueComment)
   })
 
   app.on(['issues.opened', 'issues.edited'], async (context) => {
     if (context.isBot)
       return
     const { issue } = context.payload
-    // if the rebot is mentioned in the issue body, reponse with a greeting
+    // if the robot is mentioned in the issue body, reponse with a greeting
     if (
       issue
       && issue.body
@@ -25,14 +23,14 @@ module.exports = (app) => {
       const issueComment = context.issue({
         body: response,
       })
-      await context.octokit.issues.createComment(issueComment)
+      return await context.octokit.issues.createComment(issueComment)
     }
   })
   app.on(['issue_comment.created'], async (context) => {
     if (context.isBot)
       return
     const { comment } = context.payload
-    // if the rebot is mentioned in the issue body, reponse with a greeting
+    // if the robot is mentioned in the issue body, reponse with a greeting
     if (
       comment
       && comment.body
@@ -42,7 +40,7 @@ module.exports = (app) => {
       const issueComment = context.issue({
         body: response,
       })
-      await context.octokit.issues.createComment(issueComment)
+      return await context.octokit.issues.createComment(issueComment)
     }
   })
 };
