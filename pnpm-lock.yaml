@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.33.1
-  '@oceanlvr/chatgpt': ^0.5.0
+  '@oceanlvr/chatgpt': ^1.0.3
   '@rollup/plugin-commonjs': ^23.0.3
   '@rollup/plugin-node-resolve': ^15.0.1
   eslint: ^8.29.0
@@ -15,7 +15,7 @@ specifiers:
   smee-client: ^1.2.2
 
 dependencies:
-  '@oceanlvr/chatgpt': 0.5.0
+  '@oceanlvr/chatgpt': 1.0.3
   probot: 12.2.8
   probot-commands-pro: 1.0.1
 
@@ -798,14 +798,13 @@ packages:
       fastq: 1.14.0
     dev: true
 
-  /@oceanlvr/chatgpt/0.5.0:
-    resolution: {integrity: sha512-ihhfO6wB1lhNbROuus5mwy7T2BqhjWV57P1Dz4o78iMHRAjOgWE/NFxVJLvzyxPYILs0M6JnxnY+ZxFnqfuwXg==}
+  /@oceanlvr/chatgpt/1.0.3:
+    resolution: {integrity: sha512-eOTXZJ6zFKHP+9gszKWJ9gt53iIauFDC/3kGe8CTHNvevdHs/CHvQdvebtlItSJOnwUoHhqlPDhs5eLvf+jdsg==}
     engines: {node: '>=14'}
     dependencies:
       eventsource-parser: 0.0.5
       expiry-map: 2.0.0
       node-fetch: 3.3.0
-      react-native-uuid: 2.0.1
       remark: 14.0.2
       strip-markdown: 5.0.0
       uuid: 9.0.0
@@ -5326,11 +5325,6 @@ packages:
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
-
-  /react-native-uuid/2.0.1:
-    resolution: {integrity: sha512-cptnoIbL53GTCrWlb/+jrDC6tvb7ypIyzbXNJcpR3Vab0mkeaaVd5qnB3f0whXYzS+SMoSQLcUUB0gEWqkPC0g==}
-    engines: {node: '>=10.0.0', npm: '>=6.0.0'}
-    dev: false
 
   /read-pkg-up/7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}

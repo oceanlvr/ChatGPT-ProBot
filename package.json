@@ -18,7 +18,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@oceanlvr/chatgpt": "^0.5.0",
+    "@oceanlvr/chatgpt": "^1.0.3",
     "probot": "^12.2.4",
     "probot-commands-pro": "^1.0.1"
   },
