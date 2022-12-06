@@ -1,6 +1,10 @@
 # ChatGPT ProBot
+[![Release Version](https://img.shields.io/github/release/oceanlvr/ChatGPTBot.svg)](https://github.com/oceanlvr/ChatGPTBot/releases/latest) ![Twitter](https://img.shields.io/twitter/follow/AdaMeta1?style=social)
 
-A ChatGPT-based GitHub APP. Type `/chatgpt` to chat with robot 🤖️
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/apps/chatgptbot) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oceanlvr/ChatGPTBot)
+
+A ChatGPT-based GitHub APP. Type `/chatgpt` to chat with robot 🤖️. **Try on [issue#1](https://github.com/oceanlvr/ChatGPT-ProBot/issues/1)**
+
 
 ![hello](./assets/Hi.jpg)
 
@@ -8,7 +12,7 @@ Powered by [Probot](https://github.com/probot/probot) & [chatgpt-api](https://gi
 
 ## Deploy your own APP
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oceanlvr/ChatGPTBot)
+
 
 1. [Install & Configure the GitHub App](https://github.com/apps/chatgptbot)
 2. Create `.env` file following `example.env`, please check config section in your [GitHub apps page](https://github.com/settings/apps)
