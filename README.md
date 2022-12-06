@@ -1,6 +1,6 @@
 # ChatGPT ProBot
 
-A ChatGPT based GitHub APP. Type `/chatgpt` to chat with rebot 🤖️ 
+A ChatGPT based GitHub APP. Type `/chatgpt` to chat with robot 🤖️ 
 
 
 ![hello](./assets/Hi.jpg)
