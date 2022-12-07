@@ -1,6 +1,6 @@
 # ChatGPT ProBot
 
-[![Release Version](https://img.shields.io/github/release/oceanlvr/ChatGPTBot.svg)](https://github.com/oceanlvr/ChatGPTBot/releases/latest) ![Twitter](https://img.shields.io/twitter/follow/AdaMeta1?style=social)
+[![Release Version](https://img.shields.io/github/release/oceanlvr/ChatGPTBot.svg)](https://github.com/oceanlvr/ChatGPTBot/releases/latest) [![Twitter](https://img.shields.io/twitter/follow/AdaMeta1?style=social)](https://twitter.com/AdaMeta1)
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/apps/chatgptbot) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oceanlvr/ChatGPTBot)
 
