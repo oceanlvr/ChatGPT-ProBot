@@ -28,6 +28,7 @@
     "@antfu/eslint-config": "^0.33.1",
     "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.2.0",
     "eslint": "^8.29.0",
     "jest": "^29.0.0",
     "nock": "^13.0.5",
