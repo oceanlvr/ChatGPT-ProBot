@@ -3,12 +3,14 @@ const { ChatGPTAPI } = require('@oceanlvr/chatgpt')
 const client = new ChatGPTAPI({ sessionToken: process.env.SESSION_TOKEN })
 
 async function search(searchPrompt) {
-  // await client.ensureAuth()
+  await client.ensureAuth()
   const reponse = await client.sendMessage(searchPrompt)
   return reponse
 }
 
 async function refactor({ code, lang, prompt }) {
+  await client.ensureAuth()
+
   const searchPrompt = `Refactor folloing ${lang} code. Do not include example usage. ${prompt}.
   ${code}
 `
@@ -17,6 +19,8 @@ async function refactor({ code, lang, prompt }) {
 }
 
 async function review({ code, lang, prompt }) {
+  await client.ensureAuth()
+
   const searchPrompt = `Review folloing ${lang} code. ${prompt}.
   ${code}
 `
