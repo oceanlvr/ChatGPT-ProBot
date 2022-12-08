@@ -1,4 +1,5 @@
-const { ChatGPTAPI } = require('@oceanlvr/chatgpt')
+// const { ChatGPTAPI } = require('@oceanlvr/chatgpt')
+const { ChatGPTAPI } = require('chatgpt')
 
 const client = new ChatGPTAPI({ sessionToken: process.env.SESSION_TOKEN })
 
