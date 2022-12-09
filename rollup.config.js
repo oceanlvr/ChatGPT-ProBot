@@ -9,8 +9,11 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    resolve({ preferBuiltins: true, }),
+    resolve({ preferBuiltins: false, }),
     commonjs(),
     terser()
   ],
+  external: [
+    "tr46"
+  ]
 }
